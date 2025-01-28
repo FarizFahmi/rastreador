@@ -18,7 +18,7 @@ func ConnectDB() {
 	newLogger := &db.CustomLogger{
 		Config: logger.Config{
 			SlowThreshold: time.Second,
-			LogLevel:      logger.Info,
+			LogLevel:      logger.Error, // for display error only
 			Colorful:      true,
 		},
 	}
